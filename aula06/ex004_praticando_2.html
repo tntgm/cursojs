@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Praticando 002</title>
+    <style>
+        body {
+            font: normal 20pt Arial;
+            background-color: #970f90;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Qual é o seu nome? ')
+        var cidade = window.prompt('Em que cidade você nasceu? ')
+        var ano_nasc = Number(window.prompt('Em que ano você nasceu?'))
+        var ano_atual = Number(window.prompt('Em que ano estamos?'))
+        var idade = ano_atual - ano_nasc
+
+        //sal.toFixed(2).replace('.',',')
+        document.write(`Olá, <h1>${nome}!!!</h1> <br> Seu nome tem ${nome.length} letras.<br><br> `)
+        document.write(`Seu nome em maiúscula é ${nome.toLocaleUpperCase()}<br>`)
+        document.write(`Seu nome em maiúscula é ${nome.toLocaleLowerCase()}<br><br>`)
+        //document.write(`Sua cidade de nascimento é ${cidade}<br>`)
+        document.write(`Então você é de ${cidade} e você tem ${idade} anos de idade<br>`)
+        
+    </script>
+</body>
+</html>
