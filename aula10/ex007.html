@@ -7,11 +7,14 @@
     <title>Somando Números</title>
     <style>
         body {
+            background-color: #cec65e;
             font: normal 18pt Arial;
+            text-align: center;
         }
         input {
             font: normal 18pt Arial;
-            width: 100px;
+            width: 120px;
+            margin-top: 20px;
         }
         div#res {
             margin-top: 20px;
@@ -23,7 +26,8 @@
     <input type="number" name="txtn1" id="txtn1"> +
     <input type="number" name="txtn2" id="txtn2">
     <input type="button" value="Somar" onclick="somar()">
-    <div id="res">Resultado</div>
+    <div id="res">Resultado : </div>
+    <input type="button" value="Limpar" onclick="document.location.reload(true)">
     <script>
         function somar() {
             var tn1 = window.document.getElementById('txtn1')
